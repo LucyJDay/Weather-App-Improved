@@ -15,23 +15,42 @@
   <body>
     <div class="weather-application">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" value="Search" />
+        <form class="city-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="city-form-input"
+          />
+          <input type="submit" value="Search" class="city-form-button" />
         </form>
       </header>
       <main>
-        <div class="today_weather">
-          <h1>28°C</h1>
-          <h2>☀️ Sunny</h2>
-          <h3>Barcelona</h3>
-          <p>
-            <span class="date_time"> Tuesday 14:50</span>
-            <span class="Humidity"> Humidity: 10%</span>
-            <span class="Wind"> Wind: 2.6 km/hr</span>
-          </p>
+        <div class="today-weather">
+          <h1>28<span class="temp-unit">°C</span></h1>
+          <h2>
+            <div class="weather-app-emoji">☀️</div>
+            <div class="weather-app-type">Sunny</div>
+          </h2>
+          <div class="country-details">
+            <div class="place-time">
+              <h3>Barcelona</h3>
+              <p>
+                <span class="date-time"> Tuesday 14:50</span>
+              </p>
+            </div>
+            <div class="weather-details">
+              <p>
+                <span class="Humidity"> Humidity: 10%</span>
+                <br />
+                <span class="Wind"> Wind: 2.6 km/hr</span>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="forecast_weather"></div>
+        <div class="forecast-weather">
+          <img src="media/Forrest graphic long.png" class="forrest-pic" />
+        </div>
       </main>
       <footer>
         Built by
@@ -46,6 +65,11 @@
         and hosted on
         <a href="https://weather-app-lucy-day.netlify.app" target="_blank">
           Netlify
+        </a>
+        <br />
+        Graphic image by
+        <a href="https://www.vecteezy.com/members/ancalanusantara ">
+          ancalanusantara
         </a>
       </footer>
     </div>
