@@ -1,8 +1,6 @@
 body {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
 .weather-application {
   background-color: #d6eee1;

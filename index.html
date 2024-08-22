@@ -15,12 +15,13 @@
   <body>
     <div class="weather-application">
       <header>
-        <form class="city-form">
+        <form class="city-form" id="city-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
             class="city-form-input"
+            id="city-form-input"
           />
           <input type="submit" value="Search" class="city-form-button" />
         </form>
@@ -34,7 +35,7 @@
           </h2>
           <div class="country-details">
             <div class="place-time">
-              <h3>Barcelona</h3>
+              <h3 id="city-name">Barcelona</h3>
               <p>
                 <span class="date-time"> Tuesday 14:50</span>
               </p>
@@ -73,5 +74,6 @@
         </a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
