@@ -60,8 +60,8 @@ h1 {
 h2 {
   margin: 0px;
 }
-.weather-app-emoji {
-  font-size: 122px;
+.weather-app-icon {
+  width: 175px;
 }
 .country-details {
   display: flex;

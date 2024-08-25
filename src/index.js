@@ -8,6 +8,9 @@ function updateWeather(response) {
   let dateElement = document.querySelector("#current-day");
   let date = new Date(response.data.time * 1000);
 
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
+
   cityElement.innerHTML = response.data.city;
   currentTempElement.innerHTML = Math.round(currentTemp);
   weatherType.innerHTML = response.data.condition.description;
@@ -51,5 +54,3 @@ function handleSearchSubmit(event) {
 }
 let searchFormElement = document.querySelector("#city-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
-
-searchCity(Barcelona);
