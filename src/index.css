@@ -59,27 +59,18 @@ h1 {
 }
 h2 {
   margin: 0px;
+  font-size: 1.5em;
 }
 .weather-app-icon {
   width: 175px;
 }
 .country-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  text-align: left;
-  padding-bottom: 30px;
+  text-align: centre;
+  padding: 12px 0px 30px 0px;
 }
-h3 {
-  padding: 0;
-  margin: 0;
-  font-size: 1.5em;
-}
+
 p {
   margin: 0;
-}
-.weather-details {
-  padding-top: 12px;
 }
 .forrest-image {
   background-color: #0d0d0d;
@@ -95,7 +86,7 @@ img {
   justify-content: space-around;
   background-color: #0d0d0d;
   color: #33a370;
-  padding: 10px;
+  padding: 30px;
 }
 .weather-forecast-date {
   text-align: center;
