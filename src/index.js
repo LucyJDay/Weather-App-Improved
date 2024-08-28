@@ -17,6 +17,8 @@ function updateWeather(response) {
   humidityElement.innerHTML = `Humidity: ${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `Wind: ${response.data.wind.speed} km/hr`;
   dateElement.innerHTML = formatDate(date);
+
+  getForcast(response.data.city);
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
@@ -53,7 +55,15 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForcast(city) {
+  apiKey = "a47eoa5f93f1482be2363ad1451fc0at";
+  apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiURL).then(displayForecast);
+  console.log(apiURL);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHTML = "";
 
@@ -78,4 +88,6 @@ function displayForecast() {
 
 let searchFormElement = document.querySelector("#city-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Barcelona");
 displayForecast();
