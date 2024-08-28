@@ -80,7 +80,7 @@ p {
 .weather-details {
   padding-top: 12px;
 }
-.forecast-weather {
+.forrest-image {
   background-color: #0d0d0d;
 }
 img {
@@ -89,6 +89,30 @@ img {
   padding: 0px;
   border: none;
 }
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  background-color: #0d0d0d;
+  color: #33a370;
+  padding: 10px;
+}
+.weather-forecast-date {
+  text-align: center;
+  line-height: 20px;
+}
+.weather-forecast-icon {
+  text-align: center;
+  font-size: 38px;
+}
+.weather-forecast-temperatures {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.weather-forecast-temperature {
+  padding: 0 10px;
+}
+
 footer {
   background-color: #0d0d0d;
   color: #d6eee1;
